@@ -2,7 +2,7 @@
 const request = require('request');
 const Wit = require('node-wit').Wit;
 const log = require('node-wit').log;
-const FB_PAGE_TOKEN = "EAAVB0t4bEicBANZB1PZAacdIbv9dbp2euMcrW20PZAHqPDGgZCN5kZA8ZCDHTWIPsQLtKxmyZCZCveOfTNeLldYRZCx8kEi0DlcF1G0393DmPoUZBl4ykqJbTPdoKVRh7Na5vLTpzjesCOceRT0ZBdgPt6LBFLwZClthjxDFQgNK9t39u7h7oaMmo5nL";
+const FB_PAGE_TOKEN = "EAAVB0t4bEicBACTeTxP5l5ldLVvOBhZCsON0HTR0DFuP0bIniIagQDhPocxbrku4RRFkxiLbtYlza4F5IPoLLb5LOA2vpezztCIaKJzfvTRhLgNESCntrdzx1WZBKV91WPDF2lwhkm8B4dWv2wFaALR1ZCuA4wqbhRo202sCoV5xe4KLGQF";
 const WIT_TOKEN = "ZNAZKF2XUKTFS2G7ZLLBGDHJMB6DC4AP";
 module.exports = function(app, passport) {
 	app.get("/", function(req, res){
@@ -139,7 +139,7 @@ const wit = new Wit({
 
 
 function get_wit (req, res){
-  if (req.query['hub.verify_token'] === 'EAAVB0t4bEicBANZB1PZAacdIbv9dbp2euMcrW20PZAHqPDGgZCN5kZA8ZCDHTWIPsQLtKxmyZCZCveOfTNeLldYRZCx8kEi0DlcF1G0393DmPoUZBl4ykqJbTPdoKVRh7Na5vLTpzjesCOceRT0ZBdgPt6LBFLwZClthjxDFQgNK9t39u7h7oaMmo5nL') {
+  if (req.query['hub.verify_token'] === FB_PAGE_TOKEN) {
 		console.log(req.query['hub.challenge']);
 		console.log(req.query['hub.challenge'][0]);
 		res.contentType = "text/plain";

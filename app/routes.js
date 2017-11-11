@@ -2,7 +2,7 @@
 const request = require('request');
 const Wit = require('node-wit').Wit;
 const log = require('node-wit').log;
-const FB_PAGE_TOKEN = "EAAVB0t4bEicBACTeTxP5l5ldLVvOBhZCsON0HTR0DFuP0bIniIagQDhPocxbrku4RRFkxiLbtYlza4F5IPoLLb5LOA2vpezztCIaKJzfvTRhLgNESCntrdzx1WZBKV91WPDF2lwhkm8B4dWv2wFaALR1ZCuA4wqbhRo202sCoV5xe4KLGQF";
+const FB_PAGE_TOKEN = "EAAVB0t4bEicBAI8gNhKcTGnNnxZCRnZAX4QRHvu10oJhMTJQNxSp15s3788GSZCLKFwMZBkXLB5EufrtIC4YkTUXqfy8OidZCY6iDfD2NgGKLYzlwgBMSUODWnPN2krjNPAfwOTGGsaZBCeGVbrjq3i7yqjHkgDR6TnNU3NB2vW7f5orCQNtuw";
 const WIT_TOKEN = "ZNAZKF2XUKTFS2G7ZLLBGDHJMB6DC4AP";
 module.exports = function(app, passport) {
 	app.get("/", function(req, res){

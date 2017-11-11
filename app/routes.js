@@ -7,7 +7,6 @@ const WIT_TOKEN = "ZNAZKF2XUKTFS2G7ZLLBGDHJMB6DC4AP";
 module.exports = function(app, passport) {
 	app.get("/", function(req, res){
 		console.log("yeyeyeyeyeyye")
-		res.send(200)
 	})
 
 	// =====================================

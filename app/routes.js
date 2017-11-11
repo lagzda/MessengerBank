@@ -5,7 +5,8 @@ const log = require('node-wit').log;
 const FB_PAGE_TOKEN = "EAAVB0t4bEicBANZB1PZAacdIbv9dbp2euMcrW20PZAHqPDGgZCN5kZA8ZCDHTWIPsQLtKxmyZCZCveOfTNeLldYRZCx8kEi0DlcF1G0393DmPoUZBl4ykqJbTPdoKVRh7Na5vLTpzjesCOceRT0ZBdgPt6LBFLwZClthjxDFQgNK9t39u7h7oaMmo5nL";
 const WIT_TOKEN = "ZNAZKF2XUKTFS2G7ZLLBGDHJMB6DC4AP";
 module.exports = function(app, passport) {
-
+	app.get("/", function(){console.log("yeyeyeyeyeyye")})
+	res.send(200)
 	// =====================================
 	// FACEBOOK ROUTES =====================
 	// =====================================

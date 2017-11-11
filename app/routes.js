@@ -139,7 +139,8 @@ const wit = new Wit({
 
 
 function get_wit (req, res){
-  if (req.query['hub.verify_token'] === "EAAVB0t4bEicBAI8gNhKcTGnNnxZCRnZAX4QRHvu10oJhMTJQNxSp15s3788GSZCLKFwMZBkXLB5EufrtIC4YkTUXqfy8OidZCY6iDfD2NgGKLYzlwgBMSUODWnPN2krjNPAfwOTGGsaZBCeGVbrjq3i7yqjHkgDR6TnNU3NB2vW7f5orCQNtuw") {
+	console.log(req.query['hub.verify_token']);
+  if (req.query['hub.verify_token'] == "EAAVB0t4bEicBAI8gNhKcTGnNnxZCRnZAX4QRHvu10oJhMTJQNxSp15s3788GSZCLKFwMZBkXLB5EufrtIC4YkTUXqfy8OidZCY6iDfD2NgGKLYzlwgBMSUODWnPN2krjNPAfwOTGGsaZBCeGVbrjq3i7yqjHkgDR6TnNU3NB2vW7f5orCQNtuw") {
 		console.log(req.query['hub.challenge']);
 		console.log(req.query['hub.challenge'][0]);
 		res.contentType = "text/plain";
